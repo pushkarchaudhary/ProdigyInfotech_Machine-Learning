@@ -1,83 +1,127 @@
 # ProdigyInfotech_Machine-Learning
 # Machine Learning Mini Projects
 
-This repository contains two mini projects implemented using Python and Scikit-Learn:
+#Machine Learning & AI Projects
+This repository contains 4 machine learning and computer vision projects, demonstrating regression, clustering, classification, and real‑time gesture recognition.
 
-1. House Price Prediction (Linear Regression)
-2. Customer Segmentation (K-Means Clustering)
+Task‑01: House Price Prediction using Linear Regression
+Objective
+Predict house prices based on square footage, bedrooms, and bathrooms using a Linear Regression model.
 
-1. House Price Prediction - Linear Regression
+Key Features
+Supervised regression model.
 
-Objective:
-Predict the price of a house based on:
-- Square Footage
-- Number of Bedrooms
-- Number of Bathrooms
+Input features: Square footage, bedrooms, bathrooms.
 
-Technologies Used:
-- Python
-- Pandas
-- NumPy
-- Scikit-Learn
-- Matplotlib
+Evaluates with Mean Squared Error (MSE) and R² Score.
 
-Steps Implemented:
-1. Created a sample dataset of houses with square footage, bedrooms, bathrooms, and price.
-2. Split the data into **training** and **testing** sets.
-3. Trained a **Linear Regression model** using `scikit-learn`.
-4. Predicted house prices for test data.
-5. Evaluated the model using **Mean Squared Error (MSE)** and **R² Score**.
-6. Visualized **Actual vs Predicted Prices** with a scatter plot.
+Workflow
+Load dataset of house features and prices.
 
+Split into training and testing sets.
 
-2. Customer Segmentation - K-Means Clustering
+Train a Linear Regression model.
 
-Objective:
-Group customers of a retail store into segments based on:
-- Annual Income
-- Spending Score
+Evaluate and predict house prices.
 
-This helps businesses understand customer behavior and target specific groups.
+Use Cases
+Real estate price estimation
 
-Technologies Used:
-- Python
-- Pandas
-- NumPy
-- Scikit-Learn
-- Matplotlib
-- Seaborn
+Assisting buyers and sellers in property valuation
 
-Steps Implemented
-1. Created a sample dataset of customers with annual income and spending score.
-2. Standardized the data using `StandardScaler` for better clustering.
-3. Determined the optimal number of clusters using the **Elbow Method**.
-4. Applied **K-Means Clustering** to segment customers.
-5. Visualized the clusters and centroids with a scatter plot.
-6. Labeled the clusters to identify customer groups (High, Medium, Low value).
+Task‑02: Customer Segmentation using K‑Means Clustering
+Objective
+Segment retail store customers based on their purchase history using K‑Means clustering, enabling targeted marketing.
 
-📊 Sample Outputs
-House Price Prediction
-- R² Score shows how well the model predicts.
-- Scatter plot comparing **Actual vs Predicted Prices**.
+Key Features
+Unsupervised learning (Clustering).
 
-Customer Segmentation
-- Visualizes customers grouped into clusters.
-- Each color represents a unique segment.
+Groups customers with similar purchase patterns.
 
-💡 Future Improvements
-- Use a **real-world dataset** for more accurate predictions.
-- Deploy the models using **Flask / Streamlit** for a web interface.
-- Automatically label clusters for better business insights.
+Uses the Elbow Method to select the optimal number of clusters.
 
-## 📂 Project Structure
-1. Project Overview
-Goal: Recognize and classify hand gestures for gesture-based control.
+Workflow
+Collect customer purchase/frequency data.
 
-Approach:
+Normalize data for clustering.
 
-Collect or use a hand gesture dataset (images or video frames).
-Preprocess images (grayscale, resize, normalize).
-Train a Convolutional Neural Network (CNN).
-Test on images or real-time webcam feed.
+Apply K‑Means to group customers.
 
+Visualize clusters in 2D/3D.
+
+Use Cases
+Market segmentation for targeted campaigns
+
+Personalized offers and promotions
+
+Customer behavior analytics
+
+Task‑03: Image Classification using SVM (Cats vs Dogs)
+Objective
+Classify images of cats and dogs using a Support Vector Machine (SVM) model from the Kaggle dataset.
+
+Key Features
+Supervised classification model using SVM.
+
+Images are resized and converted to numerical features.
+
+Evaluates performance with Accuracy Score and Confusion Matrix.
+
+Workflow
+Load Cats vs Dogs image dataset.
+
+Preprocess images (resize, normalize, flatten).
+
+Train an SVM classifier.
+
+Evaluate accuracy and predict new images.
+
+Use Cases
+Basic image classification
+
+Animal detection in computer vision
+
+Demonstrates SVM for small datasets
+
+Task‑04: Hand Gesture Recognition
+Objective
+Recognize and classify hand gestures from images or video streams, enabling gesture‑based control systems.
+
+Key Features
+Uses CNN or MediaPipe landmarks for gesture detection.
+
+Supports real‑time webcam gesture recognition.
+
+Detects gestures like Thumbs Up, Peace, Fist, Stop, etc.
+
+Workflow
+Collect or load a hand gesture dataset.
+
+Preprocess images or extract 21 key hand landmarks.
+
+Train a CNN or ML classifier for gesture recognition.
+
+Predict gestures in real‑time using webcam or test images.
+
+Use Cases
+Touchless AR/VR or gaming interfaces
+
+Sign language recognition
+
+Smart home/device control with gestures
+
+How to Run
+Clone the repository.
+
+Install required dependencies from requirements.txt.
+
+Run individual Python files:
+
+task01_linear_regression.py
+
+task02_kmeans_clustering.py
+
+task03_svm_classification.py
+
+task04_hand_gesture_recognition.py
 
